@@ -1,9 +1,9 @@
 
     //网站最后更新时间（版本更新需更改）
-    var siteLastUpdateTime = '2020年4月22日19点';
+    var siteLastUpdateTime = '2021年1月9日20点';
 
     //网站开始时间
-    var siteBeginRunningTime = '2018-07-25 20:00:00';
+    var siteBeginRunningTime = '2021-01-09 20:00:00';
 
     // 广告上下滚动
     function getStyle(obj,name){

@@ -4,6 +4,8 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -30,6 +32,8 @@ import java.util.Map;
 @ConditionalOnProperty(name = "spring.dataSource.type", havingValue = "com.alibaba.druid.pool.DruidDataSource", matchIfMissing = true)
 @Slf4j
 public class DruidDataSourceConfig {
+
+    private Logger log = LoggerFactory.getLogger(DruidDataSourceConfig.class);
 
     @Value("${druidUsername}")
     private String druidUsername;
